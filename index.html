@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QRCode Scanner</title>
     <!-- include the library -->
-    <script src="https://unpkg.com/html5-qrcode@2.3.7/html5-qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
 </head>
 <body>
     <div style="align: center">
@@ -44,7 +44,7 @@
 
         let html5QrcodeScanner = new Html5QrcodeScanner(
         "qr-reader",
-        { fps: 10, qrbox: {width: 200, height: 200} },
+        { fps: 60, qrbox: {width: 200, height: 200} },
         /* verbose= */ false);
         html5QrcodeScanner.render(onScanSuccess, onScanFailure);
 
